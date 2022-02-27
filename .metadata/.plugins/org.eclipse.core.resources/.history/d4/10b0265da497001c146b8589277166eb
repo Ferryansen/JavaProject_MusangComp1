@@ -1,0 +1,37 @@
+package types;
+
+import java.util.ArrayList;
+
+public class motorcycles extends vehicle {
+	private int wheelMotor;
+	private String typeMotor;
+	private int helm;
+	
+	private static ArrayList<Integer> wheelMotorData = new ArrayList<>();
+	private static ArrayList<Integer> helmData = new ArrayList<>();
+	private static ArrayList<String> typeMotorData = new ArrayList<>();
+	
+	public motorcycles(int wheelMotor, String typeMotor, int helm, String brand, String name, String licenseNumber, String typeVehicle, int topSpeed, int gasCapacity) {
+		super(brand, name, licenseNumber, typeVehicle, topSpeed, gasCapacity);
+		
+		this.wheelMotor = wheelMotor;
+		this.typeMotor = typeMotor;
+		this.helm = helm;
+		
+		wheelMotorData.add(wheelMotor);
+		typeMotorData.add(typeMotor);
+		helmData.add(helm);
+	}
+	
+	public static void callWheelMotor(int index) {
+		System.out.print(wheelMotorData.get(index));
+	}
+	
+	public static void callHelm(int index) {
+		System.out.print(helmData.get(index));
+	}
+	
+	public static void callTypeCar(int index) {
+		System.out.print(typeMotorData.get(index));
+	}
+}

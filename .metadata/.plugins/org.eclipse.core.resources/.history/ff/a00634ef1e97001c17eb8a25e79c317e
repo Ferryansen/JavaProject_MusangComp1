@@ -1,0 +1,8 @@
+package types;
+
+public class motorcycles extends vehicle {
+	private int wheelMotor;
+	private int helm;
+	private String typeMotor;
+	private int helmPrice;
+}

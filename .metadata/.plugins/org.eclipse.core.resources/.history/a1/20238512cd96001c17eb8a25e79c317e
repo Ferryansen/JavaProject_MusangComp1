@@ -1,0 +1,12 @@
+package parents;
+
+public class father extends parent {
+	private String name;
+	private int umur;
+	
+	public Father(String name, int umur, int strictness, String hasHouse) {
+		super(strictness, hasHouse);
+		this.name = name;
+		this.umur = umur;
+	}
+}

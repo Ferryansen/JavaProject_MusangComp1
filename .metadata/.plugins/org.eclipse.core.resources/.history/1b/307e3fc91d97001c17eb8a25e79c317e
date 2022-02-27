@@ -1,0 +1,12 @@
+package types;
+
+public class cars extends vehicle {
+	private int wheelCar;
+	private int enterSystem;
+	
+	public cars(int wheelCar, int enterSystem, String brand, String name, String licenseNumber, String typeVehicle, int topSpeed, int gasCapacity) {
+		super(brand, name, licenseNumber, typeVehicle, topSpeed, gasCapacity);
+		this.wheelCar = wheelCar;
+		this.enterSystem = enterSystem;
+	}
+}

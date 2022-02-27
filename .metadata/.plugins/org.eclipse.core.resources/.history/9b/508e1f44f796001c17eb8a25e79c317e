@@ -1,0 +1,54 @@
+package types;
+
+import java.util.ArrayList;
+
+public class vehicle {
+	private String brand;
+	private String name;
+	private String licenseNumber;
+	private int topSpeed;
+	private int gasCapacity;
+	
+	private static ArrayList<String> brandData = new ArrayList<>();
+	private static ArrayList<String> nameData = new ArrayList<>();
+	private static ArrayList<String> licenseNumData = new ArrayList<>();
+	private static ArrayList<Integer> topSpeedData = new ArrayList<>();
+	private static ArrayList<Integer> gasCapacityData = new ArrayList<>();
+	
+
+	public vehicle(String brand, String name, String licenseNumber, int topSpeed, int gasCapacity) {
+		this.brand = brand;
+		this.name = name;
+		this.licenseNumber = licenseNumber;
+		this.topSpeed = topSpeed;
+		this.gasCapacity = gasCapacity;
+		
+		//Ini untuk masukin data ke masing2 arraylist
+		brandData.add(brand);
+		nameData.add(name);
+		licenseNumData.add(licenseNumber);
+		topSpeedData.add(topSpeed);
+		gasCapacityData.add(gasCapacity);
+	}
+	
+	//Ini untuk manggil data dari masing2 arraylist
+	public static void callBrand(int index) {
+		System.out.print(brandData.get(index));
+	}
+	
+	public static void callName(int index) {
+		System.out.print(nameData.get(index));
+	}
+	
+	public static void callLicense(int index) {
+		System.out.print(licenseNumData.get(index));
+	}
+	
+	public static void callTopSpeed(int index) {
+		System.out.print(topSpeedData.get(index));
+	}
+	
+	public static void callGasCapacity(int index) {
+		System.out.print(gasCapacityData.get(index));
+	}
+}

@@ -1,0 +1,13 @@
+package parents;
+
+public abstract class parent {
+	private int strictness;
+	private String hasHouse;
+	
+	public parent(int strictness, String hasHouse) {
+		this.strictness = strictness;
+		this.hasHouse = hasHouse;
+		
+		System.out.println("Level strict dia mencapai " + strictness);
+	}
+}

@@ -1,0 +1,29 @@
+package parents;
+
+import java.util.ArrayList;
+
+public class father extends parent {
+	private String name;
+	private int umur;
+	private ArrayList<String> nyimpanNama = new ArrayList<>();
+	private ArrayList<Integer> nyimpanUmur = new ArrayList<>();
+
+	
+	public father(String name, int umur, int strictness, String hasHouse) {
+		super(strictness, hasHouse);
+		this.name = name;
+		this.umur = umur;
+		
+		nyimpanNama.add(name);
+		nyimpanUmur.add(umur);
+	}
+	
+	private void panggilNama(int index) {
+		System.out.println(nyimpanNama.get(index));
+	}
+	
+	private void panggilUmur(int index) {
+		System.out.println(nyimpanUmur.get(index));
+	}
+	
+}

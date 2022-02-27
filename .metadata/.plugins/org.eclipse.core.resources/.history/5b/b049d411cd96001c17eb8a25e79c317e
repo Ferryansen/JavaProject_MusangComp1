@@ -1,0 +1,11 @@
+package parents;
+
+public abstract class parent {
+	private int strictness;
+	private String hasHouse;
+	
+	public Parent(int strictness, String hasHouse) {
+		this.strictness = strictness;
+		this.hasHouse = hasHouse;
+	}
+}

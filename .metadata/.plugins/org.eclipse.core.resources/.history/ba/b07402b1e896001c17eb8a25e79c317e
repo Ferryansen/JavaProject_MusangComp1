@@ -1,0 +1,45 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Scanner;
+import parents.*;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<father> fatherList= new ArrayList<father>();
+		
+		father Father = inputFather();
+		
+	}
+	
+	private static father inputFather() {
+		String nama;
+		int umur;
+		int strictness;
+		String hasHouse;
+		Scanner input = new Scanner(System.in);
+		int maxAwal;
+		
+		
+		System.out.print("Kamu mau berapa kali? ");
+		maxAwal = input.nextInt();
+		
+		for (int i = 0; i < maxAwal; i++) {
+			System.out.print("Masukkan nama: ");
+			nama = input.nextLine();
+			
+			System.out.print("\nMasukkan umur: ");
+			umur = input.nextInt();
+			
+			System.out.print("\nSeberapa strict ayah kamu? ");
+			strictness = input.nextInt();
+			
+			System.out.print("\nApakah dia punya rumah? ");
+			hasHouse = input.next();
+			
+			return new father(nama, umur, strictness, hasHouse);
+		}
+	}
+
+}

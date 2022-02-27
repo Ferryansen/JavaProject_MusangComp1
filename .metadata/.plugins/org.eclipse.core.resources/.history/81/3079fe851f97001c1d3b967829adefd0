@@ -1,0 +1,59 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Scanner;
+import parents.*;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		
+		int many = input.nextInt();
+		father Father;
+		for (int i = 0; i < many; i++) {
+			Father = inputFather();
+		}
+//		printData(many);
+	}
+	
+	private static father inputFather() {
+		String nama;
+		int umur;
+		int strictness;
+		String hasHouse;
+		Scanner input = new Scanner(System.in);
+		
+		
+		System.out.println("Masukkan nama: ");
+		nama = input.nextLine();
+		
+		System.out.println("\nMasukkan umur: ");
+		umur = Integer.parseInt(input.nextLine());
+		
+		System.out.println("\nSeberapa strict ayah kamu? ");
+		strictness = Integer.parseInt(input.nextLine());
+		
+		System.out.println("\nApakah dia punya rumah? ");
+		hasHouse = input.nextLine();
+		
+		System.out.print("\n");
+		return new father(nama, umur, strictness, hasHouse);
+	}
+	
+//	private static void printData(int many) {
+//		for (int i = 0; i < many; i++) {
+//			System.out.print("| ");
+//			System.out.print(i+1);
+//			System.out.print("\t| ");
+//			father.panggilNama(i);
+//			System.out.print("\t\t| ");
+//			father.panggilUmur(i);
+//			System.out.print("\t\t| ");
+//			parent.panggilStrict(i);
+//			System.out.print(" |\n");
+//		}
+		
+	}
+
+}

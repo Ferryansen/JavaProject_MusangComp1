@@ -1,0 +1,7 @@
+package types;
+
+public class cars extends vehicle {
+	private int wheelCar;
+	private int enterSystem;
+	private String typeCar;
+}

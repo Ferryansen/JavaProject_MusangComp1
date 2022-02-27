@@ -1,0 +1,11 @@
+package types;
+
+public class motorcycles extends vehicle {
+	public motorcycles(String brand, String name, String licenseNumber, String typeVehicle, int topSpeed, int gasCapacity) {
+		super(brand, name, licenseNumber, typeVehicle, topSpeed, gasCapacity);
+		// TODO Auto-generated constructor stub
+	}
+	private int wheelMotor;
+	private int helm;
+	private int helmPrice;
+}

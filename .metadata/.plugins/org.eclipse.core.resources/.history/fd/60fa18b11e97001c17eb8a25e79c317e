@@ -1,0 +1,27 @@
+package parents;
+
+import java.util.ArrayList;
+
+public abstract class parent {
+	private int strictness;
+	private String hasHouse;
+	private ArrayList<String> nyimpanRumah = new ArrayList<>();
+	private ArrayList<Integer> nyimpanStrict = new ArrayList<>();
+	
+	public parent(int strictness, String hasHouse) {
+		this.strictness = strictness;
+		this.hasHouse = hasHouse;
+		
+		nyimpanRumah.add(hasHouse);
+		nyimpanStrict.add(strictness);
+	}
+	
+	private void panggilStrict(int index) {
+		System.out.println(nyimpanStrict.get(index));
+	}
+	
+	private void panggilRumah(int index) {
+		System.out.println(nyimpanRumah.get(index));
+	}
+	
+}
